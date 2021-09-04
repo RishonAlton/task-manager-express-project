@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./Normalize.css">
+    <link rel="stylesheet" href="./Styles.css">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <main id="main-container">
+        <p class="alert"></p>
+        <h2>Task Manager</h2>
+        <form id="input-container">
+            <input 
+                type="text" 
+                placeholder="E.g., wash dishes" 
+                id="input-field"
+            />
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+        <h4 class="loading">Loading...</h4>
+    </main>
+    <section class="tasks-container">
+        <ul class="tasks"></ul>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
